@@ -25,6 +25,7 @@ const InputFrom = () => {
     const [totalSecend, setTotalSecend] = useState<number | null>(null)
     console.log(userResult); // Checking the result in the console
     const [textMonth, setTextMonth] = useState<number>(1);
+    
     // Handle form submission
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
