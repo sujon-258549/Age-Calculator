@@ -331,3 +331,101 @@
     }
   }
   
+/* From Uiverse.io by Danishrehman786 */ 
+.download-button {
+    position: relative;
+    width: 160px;
+    height: 50px;
+    border: 2px solid #282828;
+    border-radius: 5px;
+    background-color: #212121;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow:
+      0 4px 8px rgba(0, 0, 0, 0.5),
+      /* Outer shadow */ inset 0 1px 3px rgba(255, 255, 255, 0.3); /* Inner shadow */
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    transition:
+      background-color 0.3s,
+      color 0.3s,
+      transform 0.2s;
+  }
+  
+  .download-button::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    border-radius: 5px;
+    background: linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      rgba(255, 255, 255, 0.1) 100%
+    );
+    z-index: 1;
+    transition:
+      top 0.5s ease-in-out,
+      bottom 0.5s ease-in-out;
+  }
+  
+  .download-button:hover::before {
+    top: 0;
+    bottom: 0;
+  }
+  
+  .download-button:hover {
+    background-color: #465243; /* Highlight color on hover */
+    color: #fff;
+    transform: translateY(-5px); /* Slight lift effect */
+  }
+  
+  .download-button .icon {
+    position: absolute;
+    left: 20px;
+  }
+  
+  .download-button .icon svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .download-button .label {
+    position: relative;
+    z-index: 10;
+  }
+  
+  .download-button .loading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-image: linear-gradient(
+      -225deg,
+      #ff7402 0%,
+      #ffe700 50%,
+      #fff55e 100%
+    );
+    filter: blur(20px);
+    z-index: -1;
+    animation: animate 0.8s linear infinite;
+  }
+  
+  @keyframes animate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
