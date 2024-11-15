@@ -103,7 +103,7 @@ const InputFrom = () => {
     };
 
     return (
-        <section className='mx-4'>
+        <section className='mx-4 pt-10'>
             <div className='max-w-4xl mx-auto px-5 py-10   bg-[#00000082] my-20' style={{ boxShadow: '5px 5px 5px green' }}>
 
 
@@ -122,7 +122,7 @@ const InputFrom = () => {
                         <div className='flex gap-3 justify-center flex-wrap bg-transparent'>
                             <fieldset className="fieldset ">
                                 <legend className='font-semibold'>Day:</legend>
-                                <input className="input focus:outline-none bg-transparent px-2" name="day" required placeholder="Day........" type="text" />
+                                <input className="input focus:outline-none bg-transparent py-1 px-2 " name="day" required placeholder="Day........" type="number" />
                             </fieldset>
                             <fieldset className="fieldset">
                                 <legend className='font-semibold'>Month:</legend>
@@ -143,7 +143,7 @@ const InputFrom = () => {
                             </fieldset>
                             <fieldset className="fieldset">
                                 <legend className='font-semibold'>Year:</legend>
-                                <input className="input focus:outline-none bg-transparent px-2" required name="year" placeholder="Year........." type="number" />
+                                <input className="input py-1 px-2 focus:outline-none bg-transparent " required name="year" placeholder="Year........." type="number" />
                             </fieldset>
                         </div>
                         <div className='flex justify-center pt-10'>
