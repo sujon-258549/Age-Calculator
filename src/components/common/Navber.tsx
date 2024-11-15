@@ -14,7 +14,7 @@ const Navber = () => {
         <section className="fixed w-full" style={{ zIndex: '999' }}>
 
             <header className="border-b  px-4 sm:px-10 bg-white tracking-wide relative z-50 ">
-                <div className="max-w-7xl w-full mx-auto flex flex-wrap items-center gap-4">
+                <div className="max-w-5xl w-full mx-auto flex flex-wrap items-center gap-4 ">
                     <a href="#">
                         <img src="/math.png" alt="logo" className="w-40" />
                     </a>

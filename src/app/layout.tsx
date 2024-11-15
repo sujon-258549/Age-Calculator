@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Navber from "@/components/common/Navber";
+import Footer from "@/components/common/Footer";
 
 
 
@@ -37,6 +38,7 @@ export default function RootLayout({
             >
                 <Navber></Navber>
                 {children}
+                <Footer></Footer>
             </body>
         </html>
     );

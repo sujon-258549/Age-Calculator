@@ -122,7 +122,7 @@ const InputFrom = () => {
                         <div className='flex gap-3 justify-center flex-wrap bg-transparent'>
                             <fieldset className="fieldset ">
                                 <legend className='font-semibold'>Day:</legend>
-                                <input className="input focus:outline-none bg-transparent py-1 px-2 " name="day" required placeholder="Day........" type="number" />
+                                <input className="input focus:outline-none text-white bg-transparent py-1 px-2 " name="day" required placeholder="Day........" type="number" />
                             </fieldset>
                             <fieldset className="fieldset">
                                 <legend className='font-semibold'>Month:</legend>
@@ -143,7 +143,7 @@ const InputFrom = () => {
                             </fieldset>
                             <fieldset className="fieldset">
                                 <legend className='font-semibold'>Year:</legend>
-                                <input className="input py-1 px-2 focus:outline-none bg-transparent " required name="year" placeholder="Year........." type="number" />
+                                <input className="input py-1 px-2 focus:outline-none bg-transparent text-white" required name="year" placeholder="Year........." type="number" />
                             </fieldset>
                         </div>
                         <div className='flex justify-center pt-10'>
